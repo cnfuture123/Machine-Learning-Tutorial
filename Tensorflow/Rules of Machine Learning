@@ -1,1 +1,5 @@
-123
+# Rules of Machine Learning
+https://developers.google.com/machine-learning/guides/rules-of-ml/
+
+## Terminology
+- Metric: A number that you care about. May or may not be directly optimized.

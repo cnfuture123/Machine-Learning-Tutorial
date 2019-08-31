@@ -20,4 +20,12 @@ https://developers.google.com/machine-learning/guides/rules-of-ml/
 - Rule #5: Test the infrastructure independently from the machine learning. 
 - Rule #6: Be careful about dropped data when copying pipelines. Often we create a pipeline by copying an existing pipeline (i.e., cargo cult programming ), and the old pipeline drops data that we need for the new pipeline.
 - Rule #7: Turn heuristics into features, or handle them externally. Usually the problems that machine learning is trying to solve are not completely new. There are a bunch of rules and heuristics which give you a lift when tweaked with machine learning. There are four ways you can use an existing heuristic: 1.Preprocess using the heuristic. 2.Create a feature. 3.Mine the raw inputs of the heuristic. 4.Modify the label.
-- 
+- Rule #8: Know the freshness requirements of your system. If you lose significant product quality if the model is not updated for a day, it makes sense to have an engineer watching it continuously.
+- Rule #9: Detect problems before exporting models.
+- Rule #10: Watch for silent failures. If you track statistics of the data, as well as manually inspect the data on occasion, you can reduce these kinds of failures.
+- Rule #11: Give feature columns owners and documentation. If the system is large, and there are many feature columns, know who created or is maintaining each feature column. Although many feature columns have descriptive names, it's good to have a more detailed description of what the feature is, where it came from, and how it is expected to help.
+- Rule #12: Don’t overthink which objective you choose to directly optimize. So, keep it simple and don’t think too hard about balancing different metrics when you can still easily increase all the metrics.
+- Rule #13: Choose a simple, observable and attributable metric for your first objective. The ML objective should be something that is easy to measure and is a proxy for the "true" objective.
+- Rule #14: Starting with an interpretable model makes debugging easier.
+- Rule #15: Separate Spam Filtering and Quality Ranking in a Policy Layer.
+

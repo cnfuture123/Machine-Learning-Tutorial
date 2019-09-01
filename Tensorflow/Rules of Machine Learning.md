@@ -28,4 +28,13 @@ https://developers.google.com/machine-learning/guides/rules-of-ml/
 - Rule #13: Choose a simple, observable and attributable metric for your first objective. The ML objective should be something that is easy to measure and is a proxy for the "true" objective.
 - Rule #14: Starting with an interpretable model makes debugging easier.
 - Rule #15: Separate Spam Filtering and Quality Ranking in a Policy Layer.
+- Rule #16: Plan to launch and iterate. So, as you build your model, think about how easy it is to add or remove or recombine features. Think about how easy it is to create a fresh copy of the pipeline and verify its correctness. Think about whether it is possible to have two or three copies running in parallel.
+- Rule #17: Start with directly observed and reported features as opposed to learned features.
+- Rule #18: Explore with features of content that generalize across contexts.
+- Rule #19: Use very specific features when you can. With tons of data, it is simpler to learn millions of simple features than a few complex features. You can use regularization to eliminate the features that apply to too few examples.
+- Rule #20: Combine and modify existing features to create new features in human-understandable ways. TensorFlow allow you to pre-process your data through transformations. The two most standard approaches are "discretizations" and "crosses".
+- Rule #21: The number of feature weights you can learn in a linear model is roughly proportional to the amount of data you have.
+- Rule #22: Clean up features you are no longer using.
+- Rule #23: You are not a typical end user. Anything that looks reasonably near production should be tested further, either by paying laypeople to answer questions on a crowdsourcing platform, or through a live experiment on real users.
+- Rule #24: Measure the delta between models.
 
